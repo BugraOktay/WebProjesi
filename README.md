@@ -1,2 +1,2 @@
 # WebProjesi
- Web
+ Web Projesi Buğra Oktay Ateş
