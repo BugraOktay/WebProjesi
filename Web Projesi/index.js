@@ -79,7 +79,7 @@ db.query("SELECT * FROM webproje.ogrenci", (error, results, fields) => {
     });
     ///////////////////////////////////////
     app.use("/k-anasayfa", function (req, res) {
-        const sqlQuery = 'SELECT * FROM webproje.ogrenci WHERE eposta = ? UNION SELECT * FROM YazLab.hoca WHERE eposta = ?;'
+        const sqlQuery = 'SELECT * FROM webproje.ogrenci WHERE eposta = ? UNION SELECT * FROM webproje.hoca WHERE eposta = ?;'
         db.query(sqlQuery, [req.session.email, req.session.email], (error, results, fields) => {
             if (error) throw error;
 
@@ -245,7 +245,7 @@ app.post('/giris-yap', (req, res) => {
     const { eposta, sifre } = req.body;
 
 
-    var sqlQuery = 'SELECT sifre FROM webproje.ogrenci WHERE eposta = ? UNION SELECT sifre FROM YazLab.hoca WHERE eposta = ?;';
+    var sqlQuery = 'SELECT sifre FROM webproje.ogrenci WHERE eposta = ? UNION SELECT sifre FROM webproje.hoca WHERE eposta = ?;';
 
 
     db.query(sqlQuery, [eposta, eposta], (error, results, fields) => {
@@ -355,6 +355,6 @@ app.post('/spor', (req, res) => {
 ////////////////////////////////////////Profill////////////////////////////////////////////
 
 
-app.listen(3000);
+app.listen(8000);
 
 
