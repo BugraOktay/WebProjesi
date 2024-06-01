@@ -1,5 +1,5 @@
 # WebProjesi
- Web Projesi Buğra Oktay Ateş
+VeriTabanı: https://drive.google.com/file/d/1fIhnnHVNOi6xIt4POLDX5rq_o9F7Y1j2/view?usp=sharing
 
- 
-Öğrenci ve hoca girişleri olan hocaların öğrencilerine eğitim yazıları ve videoları paylaşabildiği sağlıklı yaşam sitesi.
+Docker-compose MySql kurulumunda hata verdiği için docker kullanamadım. Projede kullanılan database yukarıdaki driver da mevcuttur. Mysql Workbench' e import edilip kullanılabilir.
+
